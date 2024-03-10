@@ -15,7 +15,6 @@ Boas vindas ao desafio de Decodificador da Oracle Next Education com a Alura! �
 - O resultado deve ser exibido na tela
 
 Chegou a hora de descubrir qual é mensagem secreta! ⬇️
-
-"pairaibenterns poberr enterncairair enterssenter dentersaifimesober enter tenterr fimesnailimeszaidober enterlenter coberm sufatcenterssober!"
+pairaibenterns poberr enterncairair enterssenter dentersaifimesober enter tenterr fimesnailimeszaidober enterlenter coberm sufatcenterssober
 
 #challengeonedecodificador6
