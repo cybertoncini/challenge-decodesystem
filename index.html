@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <title> Challenge | Alura & ONE </title>
+    <link rel="icon" href="images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <!--barra lateral da esquerda, armazena apenas logo da alura-->
+        <div class="left_side_bar">
+            <img src="images/alura.svg" class="logo_alura" alt="Logo da Alura">
+        </div>
+
+        <!--barra central, recebe o texto a ser manipulado-->
+        <div class="central_bar">
+            <textarea onkeyup="checkText(event)" class="input_text" placeholder="Digite seu texto aqui..."></textarea>
+
+            <div class="container_buttons">
+                <span>
+                    <img src="images/small_alert.svg" class="small_alert" alt="Círculo com ponto de exclamação dentro">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </span>
+
+                <div class="buttons">
+                    <button class="encrypt" onclick="btnEncrypt(),removeRightSideBar()">Criptografar</button>
+                    <button class="decrypt" onclick="btnDecrypt()">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+
+        <!--barra lateral da direita, avisa que não há texto-->
+        <div class="right_side_bar">
+            <img src="images/search.svg" class="search_image" alt="Mulher segurando lupa" >
+            <h2>Nenhuma mensagem encontrada</h2>
+            <p>Digite à esquerda um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+
+        <div class="right_side_bar_output" style="display: none;">
+            <textarea class="output_text"></textarea>
+            <button onclick="copy()" class="copy">Copiar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Feito por <a href="https://www.linkedin.com/in/b%C3%A1rbara-bertoncini-844818162/" target="_blank">Bárbara Bertoncini</a></p>
+    </footer>
+</body>
+<script src="scripts/script.js"></script>
+</html>
